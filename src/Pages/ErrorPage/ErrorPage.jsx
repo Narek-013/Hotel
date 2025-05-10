@@ -1,7 +1,7 @@
-import React from "react";
+
 import {  NavLink } from "react-router-dom";
 import { PiSmileySadLight } from "react-icons/pi";
-import "./ErrorPage.css";
+import "./errorPage.css";
 import { useTranslation } from "react-i18next";
 
 const ErrorPage = () => {
