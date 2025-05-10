@@ -1,0 +1,27 @@
+.SignPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 145px 0 0;
+  padding: 100px 0 150px;
+  background-size: cover;
+  background-position: center;
+  font-family: "ArchivoExtra";
+}
+@media(max-width: 1400px) {
+  .SignPage {
+    margin:  100px 0 0;
+  }
+}
+@media(max-width: 1000px) {
+  .SignPage {
+    margin:  70px 0 0;
+  }
+}
+@media(max-width: 551px) {
+  .SignPage {
+    padding: 100px 0 270px;
+  }
+}

@@ -1,0 +1,356 @@
+.ContactPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 150px;
+  margin: 100px 0 0;
+  background-size: cover;
+  background-position: center;
+  color: #3e2b24;
+  font-family: "NotoSerif";
+}
+.contactPageDiv {
+  display: flex;
+  width: 70vw;
+  height: auto;
+  gap: 50px;
+  flex-direction: column;
+}
+.contactSection1 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  justify-content: space-between;
+  background-color: #c4b693;
+}
+.contactDiv {
+  display: flex;
+  width: 40%;
+  height: auto;
+  gap: 30px;
+  flex-direction: column;
+}
+.writeDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.writeH {
+  font-size: 45px;
+}
+.writeP {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #5b5035;
+}
+.phoneEmail {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+.phoneContact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: #3e2b24;
+  }
+}
+.emailContact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: #3e2b24;
+  }
+}
+.phoneH {
+  color: #27231a;
+}
+
+.emailH {
+  color: #27231a;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.socialMediaH {
+  color: #27231a;
+}
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+.socialIcons a {
+  color: rgb(46, 41, 41);
+}
+.contactFormDiv {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.nameSurnameDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.nameSurnameDiv > .nameDiv,
+.surnameDiv {
+  display: flex;
+  width: 45%;
+  height: auto;
+  gap: 10px;
+  flex-direction: column;
+}
+.inpNameSpan {
+  font-size: 15px;
+  color: #1e1b14;
+}
+.inpArea {
+  border: 1px solid #4b4129;
+}
+.inpArea:hover {
+  border: 2px solid #4b4129;
+}
+.contactInput {
+  padding: 8px;
+  background-color: #dbd4c3;
+}
+.emailDiv {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
+.messageDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+.textarea {
+  background-color: #dbd4c3;
+  min-height: 100px;
+  padding: 8px;
+}
+.sendBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4b4129;
+  background-color: #5b5445;
+  color: #dbd4c3;
+  padding: 8px;
+  transition: 0.5s;
+}
+.sendBtn:hover {
+  background-color: #c2baa9;
+  color: #27231a;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contactSection2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  justify-content: space-between;
+  background-color: #c4b693;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+}
+.visitUs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.visitUsP {
+  width: 60%;
+  line-height: 1.5;
+  font-size: 20px;
+  color: #5b5035;
+}
+.address {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.addressH {
+  color: #1e1b14;
+}
+.workingDays {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 15px;
+}
+.wHours {
+  display: flex;
+  margin-bottom: 30px;
+  color: #1e1b14;
+  font-size: 18px;
+  font-weight: 600;
+}
+.weekDays {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+.weekDay {
+  width: 100px;
+  color: #27231a;
+}
+.hours {
+  display: flex;
+  width: 100px;
+}
+.contactMapWiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+@media(max-width: 1460px) {
+  .contactPageDiv {
+    width: 80vw;
+  }
+}
+@media (max-width: 1000px) {
+  .writeH {
+    font-size: 30px;
+  }
+  .contactPageDiv {
+    width: 85vw;
+  }
+  .ContactPage {
+    margin: 80px 0 0;
+    padding: 120px 0 100px;
+  }
+  .writeP {
+    font-size: 15px;
+  }
+  .contactSection1 > div {
+    width: 45%;
+  }
+  .phoneA,
+  .emailA {
+    font-size: 15px;
+  }
+  .visitUsP {
+    width: 80%;
+    font-size: 15px;
+  }
+  .visitUsH {
+    font-size: 30px;
+  }
+  .weekDays {
+    gap: 70px;
+  }
+}
+@media (max-width: 751px) {
+  .writeP {
+    font-size: 20px;
+  }
+  .mapIframe {
+    height: 250px;
+  }
+  .ContactPage {
+    margin: 70px 0 0;
+    padding: 120px 0 100px;
+  }
+  .contactSection1 {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contactSection1 > div {
+    width: 100%;
+  }
+  .visitUsP {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 551px) {
+  .writeP {
+    font-size: 15px;
+  }
+  .phoneEmail {
+    flex-direction: column;
+    div {
+      align-items: center;
+      justify-content: center;
+    }
+    gap: 20px;
+  }
+  .nameSurnameDiv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nameSurnameDiv > .nameDiv,
+  .surnameDiv {
+    width: 100%;
+  }
+  .contactInput {
+    width: 100%;
+  }
+  .writeP {
+    font-size: 20px;
+    text-align: center;
+  }
+  .weekDays > span {
+    font-size: 3vw;
+  }
+
+  .workingDays,
+  .socialMedia,
+  .weekDays,
+  .address,
+  .writeDiv,
+  .visitUs {
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+    }
+    .addressSpan {
+      text-align: center;
+    }
+  }
+  .visitUsH, .writeH {
+    font-size: 20px;
+  }
+  .contactForm {
+    padding: 0;
+  }
+}

@@ -1,0 +1,177 @@
+.SignUp {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.signUpDiv {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  align-items: center;
+  background-color: #ffefde;
+  height: auto;
+  gap: 20px;
+  padding: 50px;
+}
+.signUpTitle {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #5a453f;
+  margin-bottom: 50px;
+}
+
+.signUpForm {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.inpDiv {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
+.inputSignUp {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #5a3e36;
+  font-size: 14px;
+  background-color: transparent;
+  color: #3e2c27;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+.inputSignUp:hover {
+  border-bottom: 2px solid #8c4b39;
+}
+.inputSignUp:focus {
+  border-bottom: 2px solid #8c4b39;
+}
+
+.inputName {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  gap: 10px;
+  color: #3e2c27;
+}
+
+.errorsS {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signUpBtn {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #674a42;
+  color: #f0e1e1;
+  border: 1px solid #332c2c;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+#signUpBtn:hover {
+  background-color: #cdb7b1;
+  color: #3e2c27;
+}
+
+#signUpBtn:disabled {
+  background-color: #c4a6a1;
+  cursor: not-allowed;
+  color: white;
+}
+
+.haveAccountSpan {
+  text-align: center;
+  font-size: 15px;
+  color: #3e2c27;
+  margin-top: 15px;
+}
+
+.haveAccountSpan a {
+  color: #8c4b39;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.haveAccountSpan a:hover {
+  text-decoration: underline;
+}
+.passwordSignUp {
+  position: relative; 
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1460px) {
+  .SignUp {
+    width: 90vw;
+  }
+}
+@media (max-width: 1000px) {
+  .SignUp {
+    width: 85vw;
+  }
+}
+@media (max-width: 751px) {
+  .signUpForm {
+    width: 70%;
+  }
+  .signUpTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #signUpBtn {
+    width: 85%;
+    padding: 10px;
+  }
+}
+@media (max-width: 551px) {
+  .signUpForm {
+    width: 100%;
+    gap: 15px;
+  }
+  .signUpDiv {
+    padding: 20px 40px;
+  }
+  .signUpTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .errorsS {
+    font-size: 10px;
+  }
+  #signUpBtn {
+    width: 90%;
+    padding: 8px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .inpDiv {
+    gap: 5px;
+  }
+  .inputName {
+    font-size: 13px;
+  }
+  .haveAccountSpan {
+    flex-direction: column;
+    font-size: 12px;
+  }
+}

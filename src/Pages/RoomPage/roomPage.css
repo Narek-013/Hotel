@@ -1,0 +1,366 @@
+.RoomPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 200px 0 100px;
+  /* background-color: #645941; */
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 43, 36, 0.3) 0%,
+    #645941 30%,
+    #645941 70%,
+    rgba(62, 43, 36, 0.3) 100%
+  );
+  align-items: center;
+  justify-content: center;
+  color: #e1e6cf;
+  font-family: "NotoSerif";
+}
+.roomPageDiv {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.roomPageTopDiv {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #e1e6cf;
+}
+.arrowBack {
+  display: flex;
+  font-size: 35px;
+  transition: 0.5s;
+}
+.arrowBack:hover {
+  color: #968258;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.roomComps {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  gap: 50px;
+}
+.imgsReservation {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+.roomImgsDiv {
+  display: flex;
+  width: 63%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.roomReservDiv {
+  display: flex;
+  width: 32%;
+  height: auto;
+  border: 2px solid #e1e6cf;
+}
+
+.roomMainImg {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  cursor: zoom-in;
+  background-size: cover;
+}
+.roomImgs_div {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.roomImgs {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.room_img {
+  display: flex;
+  width: 22%;
+  height: 80px;
+  background-size: cover;
+}
+.roomInfoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 63%;
+  height: auto;
+  gap: 30px;
+}
+.roomInfoDiv > div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.roomInfosName {
+  display: flex;
+  gap: 50px;
+}
+.allParameters {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  gap: 20px;
+  color: #e8dcc2;
+}
+.aboutRoomP {
+  display: flex;
+  width: 70%;
+  line-height: 2;
+  color: #e8dcc2;
+  font-size: 17px;
+}
+.roomInfoSpans {
+  display: flex;
+  width: 25%;
+}
+.amenetiesIconsDiv {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logInForReserve {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.logInForReserveDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  gap: 50px;
+}
+.logInForReserveP {
+  display: flex;
+  text-align: center;
+  line-height: 2;
+  font-size: 25px;
+}
+.logInForReserveBtn {
+  display: flex;
+  width: 50%;
+  border: none;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7a887;
+  color: #393327;
+  transition: 0.5s;
+}
+.logInForReserveBtn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #e1d4b9;
+}
+@media (max-width: 1460px) {
+  .roomPageTopDiv {
+    width: 90%;
+  }
+  .roomComps {
+    width: 90%;
+  }
+  .roomPageDiv {
+    width: 90vw;
+  }
+}
+@media (max-width: 1200px) {
+  .roomNameH {
+    font-size: 30px;
+  }
+  .roomImgsDiv {
+    width: 60%;
+  }
+  .roomMainImg {
+    height: 380px;
+  }
+  .roomReservDiv {
+    width: 35%;
+  }
+  .roomInfoSpans {
+    width: 35%;
+  }
+  .roomInfosName {
+    gap: 40px;
+    font-size: 15px;
+  }
+  .aboutRoomP {
+    font-size: 15px;
+  }
+  .roomInfoDiv {
+    width: 60%;
+    font-size: 15px;
+  }
+  .room_img {
+    height: 90px;
+    width: 30%;
+  }
+  .roomImgs {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .amenetiesIconsDiv {
+    gap: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .roomImgsDiv {
+    width: 50%;
+  }
+  .roomPageDiv {
+    width: 85vw;
+  }
+  .roomMainImg {
+    height: 220px;
+  }
+  .roomReservDiv {
+    width: 45%;
+  }
+  .roomInfosName {
+    gap: 40px;
+  }
+  .room_img {
+    height: 100px;
+    width: 46%;
+  }
+  .roomImgs {
+    flex-wrap: wrap;
+  }
+  .aboutRoomP {
+    line-height: 1.3;
+    font-size: 15px;
+  }
+  .roomInfoDiv {
+    width: 70%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 851px) {
+  .roomImgsDiv {
+    width: 40%;
+  }
+  .roomMainImg {
+    height: 150px;
+  }
+  .roomReservDiv {
+    width: 55%;
+  }
+  
+  .room_img {
+    height: 70px;
+    width: 42%;
+  }
+  .roomImgs {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .roomInfoDiv {
+    width: 100%;
+  }
+}
+@media (max-width: 751px) {
+  .RoomPage {
+    padding: 100px 0 50px;
+  }
+
+  .imgsReservation {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .roomImgsDiv {
+    width: 100%;
+  }
+  .roomMainImg {
+    height: 300px;
+  }
+  .roomReservDiv {
+    width: 80%;
+  }
+  .roomInfoSpans {
+    width: 38%;
+  }
+  .roomInfosName {
+    gap: 30px;
+    font-size: 15px;
+  }
+  .room_img {
+    height: 70px;
+    width: 18%;
+  }
+  .roomImgs {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .amenetiesIconsDiv {
+    gap: 10px;
+  }
+  .logInForReserve {
+    padding: 30px;
+  }
+  
+}
+@media (max-width: 551px) {
+  .roomNameH {
+    font-size: 25px;
+  }
+
+  .arrowBack {
+    font-size: 25px;
+  }
+
+  .roomReservDiv {
+    width: 100%;
+  }
+  .roomInfoSpans {
+    width: 100%;
+  }
+  .roomInfosName {
+    gap: 30px;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .aboutRoomP {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .amenetiesIconsDiv {
+    gap: 7px;
+    width: 100%;
+  }
+  .logInForReserveP {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .logInForReserveDiv {
+    width: 80%;
+  }
+}

@@ -1,0 +1,337 @@
+.Reservation {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  color: #e1e6cf;
+}
+.reservationDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.reservationDiv > div {
+  display: flex;
+  width: 80%;
+}
+.reservationTopDiv {
+  display: flex;
+  gap: 20px;
+}
+.reservationTopDiv > svg {
+  display: flex;
+  font-size: 35px;
+}
+.reservation_div {
+  gap: 50px;
+  justify-content: space-between;
+}
+.detailsForReservForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.reservationForm {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  gap: 30px;
+}
+.reservationInputsDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.ourDetailsInpDiv {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ourDetailsInpDiv > .ourDetailsInput {
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  background-color: #c4b693;
+  border: 1px solid;
+  transition: 0.3s;
+}
+.ourDetailsInput:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+#textareaReserv {
+  height: 100px;
+}
+.reservationRoomInfo {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 30px;
+  font-size: 18px;
+  padding: 30px 20px;
+  background-color: #c4b693;
+  color: #3e2b24;
+}
+.detailsReservHr {
+  border: 1px solid #e1e6cf;
+}
+.orderDetailsHr {
+  border: 1px solid #3e2b24;
+}
+.reservRoomImg {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  border: 1px solid;
+  background-size: cover;
+}
+.reservRoomDetailsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.reservRoomDetails {
+  display: flex;
+  width: 100%;
+}
+.reservRoomDetailsName {
+  display: flex;
+  width: 42%;
+}
+.ourDetailsName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reservRoomDetailsDiv > .reservWithoutTaxDiv,
+.reservTaxDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.reservSumDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.reservBtn {
+  display: flex;
+  padding: 10px;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #645941;
+  color: #e1d4b9;
+  transition: 0.5s;
+}
+.reservBtn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #423c30;
+}
+.reservBtnDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 30px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1460px) {
+  .reservationDiv > div {
+    width: 90%;
+  }
+  .Reservation {
+    width: 90vw;
+  }
+  .reservRoomDetails {
+    font-size: 16px;
+  }
+  .reservRoomDetailsName {
+    width: 43%;
+  }
+  .reservRoomDetailsDiv {
+    font-size: 16px;
+  }
+  .reservationRoomInfo {
+    padding: 20px 15px;
+  }
+}
+@media(max-width: 1200px) {
+  
+  .detailsForReservForm {
+    width: 50%;
+  }
+  .reservationRoomInfo {
+    width: 47%;
+  }
+  .reservationInputsDiv {
+    gap: 15px;
+  }
+  .ourDetailsName {
+    font-size: 15px;
+  }
+  .ourDetailsInpDiv {
+    gap: 10px;
+  }
+}
+@media(max-width: 1000px) {
+  
+  .detailsForReservForm {
+    width: 45%;
+  }
+  .Reservation {
+    width: 85vw;
+  }
+  .reservationRoomInfo {
+    width: 52%;
+  }
+  .reservationInputsDiv {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ourDetailsInpDiv {
+    gap: 20px;
+    width: 100%;
+  }
+  .reservRoomImg {
+    height: 200px;
+  }
+  .reservRoomDetailsDiv {
+    font-size: 14px;
+  }
+  .reservRoomDetails {
+    font-size: 14px;
+  }
+  .reservationRoomInfo {
+    padding: 20px 10px;
+  }
+  .detailsForReservForm {
+    padding: 0;
+  }
+}
+@media (max-width: 751px) {
+   
+  .reservationRoomInfo {
+    width: 52%;
+    gap: 20px;
+  }
+  .reservRoomDetailsName {
+    font-size: 10px;
+  }
+  .reservRoomDetail {
+    font-size: 10px;
+  }
+  .ourDetailsName {
+    font-size: 12px;
+  }
+  .ourDetailsInpDiv {
+    gap: 10px;
+    width: 100%;
+  }
+  .reservRoomImg {
+    height: 150px;
+  }
+  .reservRoomDetailsDiv {
+    font-size: 10px;
+  }
+  .reservationRoomInfo {
+    padding: 10px 5px;
+  }
+  
+  .writeOurDatasSpan,
+  .orderDetailsSpan {
+    font-size: 14px;
+  }
+  .reservBtn {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .ourDetailsInpDiv > .ourDetailsInput {
+    padding: 7px;
+    background-color: #c4b693;
+    font-size: 10px;
+  }
+  #textareaReserv {
+    height: 70px;
+  }
+  .reservationTopDiv > svg {
+    font-size: 25px;
+  }
+  .roomNameH {
+    font-size: 20px;
+  }
+  .reservationTopDiv {
+    align-items: center;
+  }
+}
+@media (max-width: 551px) {
+  
+  .detailsForReservForm {
+    width: 100%;
+  }
+  .reservationRoomInfo {
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .ourDetailsName {
+    font-size: 14px;
+  }
+  .reservationForm {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .reservRoomDetailsDiv {
+    font-size: 13px;
+  }
+  .reservRoomDetail {
+    font-size: 13px;
+  }
+  .reservRoomDetailsName {
+    width: 38%;
+    font-size: 13px;
+  }
+  .reservationRoomInfo {
+    padding: 20px 15px;
+    gap: 30px;
+  }
+  
+  .writeOurDatasSpan,
+  .orderDetailsSpan {
+    font-size: 15px;
+  }
+  .reservBtn {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+  .ourDetailsInpDiv > .ourDetailsInput {
+    padding: 10px;
+    font-size: 14px;
+  }
+  #textareaReserv {
+    height: 90px;
+  }
+  .reservRoomImg {
+    height: 200px;
+  }
+}

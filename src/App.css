@@ -1,0 +1,51 @@
+body {
+  background-color: #3e2b24;
+}
+.container{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+@font-face {
+    font-family: "ReggaeOne";
+    src: url("./Fonts/ReggaeOne-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Monserrat";
+    src: url("./Fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Wellfleet";
+    src: url("./Fonts/Wellfleet-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Audiowide";
+    src: url("./Fonts/Audiowide-Regular.ttf");
+  }
+  @font-face {
+    font-family: "SplineSans";
+    src: url("./Fonts/SplineSans-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./Fonts/Quicksand-Light.ttf");
+  }
+  @font-face {
+    font-family: "ArchivoThin";
+    src: url("./Fonts/Archivo_Condensed-Thin.ttf");
+  }
+  @font-face {
+    font-family: "ArchivoExtra";
+    src: url("./Fonts/Archivo_Expanded-ExtraLight.ttf");
+  }
+  @font-face {
+    font-family: "MeriendeLight";
+    src: url("./Fonts/Merienda-Light.ttf");
+  }
+  @font-face {
+    font-family: "NotoSerif";
+    src: url("./Fonts/NotoSerifOldUyghur-Regular.ttf");
+  }

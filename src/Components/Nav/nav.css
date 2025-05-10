@@ -1,0 +1,276 @@
+.Nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.navDiv {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projectTitle {
+  display: flex;
+  width: 35%;
+  height: auto;
+  opacity: 1;
+}
+
+.titleLink {
+  display: flex;
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+
+.projectTitleH {
+  font-size: 70px;
+  display: flex;
+}
+
+.projectTitleH span {
+  opacity: 0;
+  animation: reveal 0.5s ease-in-out forwards;
+  display: inline-block;
+  transform: translateX(-10px); 
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  width: 65%;
+  height: auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.menuContainerMobile {
+  display: flex;
+  width: 70%;
+  height: auto;
+  gap: 50px;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu {
+  display: flex;
+  width: 92%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuUl {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuLi {
+  display: flex;
+  color: #ffefde;
+  margin: 10px 5px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Monserrat";
+  transition: all 0.3s ease-in-out;
+}
+#logInLi {
+  margin-left: 30px;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+.menuLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #c3b682;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.menuLink:hover::after,
+.menuLink.active::after { 
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.active > li {
+  color: #b59f88;
+} 
+.active {
+  cursor: alias;
+  pointer-events: none; 
+
+}
+
+@media (max-width: 1460px) {
+  .navDiv {
+    width: 90vw;
+  }
+  .projectTitleH {
+    font-size: 55px;
+  }
+  .projectTitle {
+    width: 30%;
+  }
+  .menuContainer {
+    width: 70%;
+  }
+  .menuLi {
+    font-size: 13px;
+  }
+  .menuUl {
+    gap: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .projectTitleH {
+    font-size: 40px;
+  }
+  .projectTitle {
+    width: 23%;
+  }
+  .menuLi {
+    font-size: 12px;
+  }
+  .menuUl {
+    gap: 8px;
+  }
+  .menuContainer {
+    width: 73%;
+  }
+}
+@media (max-width: 1000px) {
+  .navDiv {
+    width: 85vw;
+  }
+  .projectTitleH {
+    font-size: 30px;
+  }
+  .projectTitle {
+    width: 20%;
+  }
+  .menuContainer {
+    width: 75%;
+  }
+  .menuLi {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+  .menuUl {
+    gap: 6px;
+  }
+  #logInLi {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 851px) {
+  .menuLi {
+    font-size: 1.25vw;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 751px) {
+  .projectTitleH {
+    font-size: 25px;
+  }
+  .menuLi {
+    font-size: 1.2vw;
+    margin: 5px 0;
+  }
+  #logInLi {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 651px) {
+  .projectTitleH {
+    font-size: 17px;
+  }
+  .projectTitle {
+    width: 19%;
+  }
+  .menuContainer {
+    width: 78%;
+  }
+  .menuLi {
+    margin: 5px 0;
+  }
+  .menuUl {
+    gap: 5px;
+  }
+}
+@media (max-width: 551px) {
+  .projectTitleH {
+    font-size: 25px;
+  }
+  .projectTitle {
+    width: 30%;
+  }
+  .navDiv {
+    width: 90vw;
+    padding: 25px 0;
+  }
+  .logInLink li {
+    font-size: 2vw;
+  }
+}

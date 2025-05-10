@@ -1,0 +1,92 @@
+.SliderHotel {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.SliderRoom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.slickImgDiv .slickImg {
+  display: flex;
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+.slickImageModalDiv .slickImgModal {
+  display: flex;
+  width: 100%;
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-slide > div {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.slick-slider {
+  width: 100%;
+}
+.slick-slider {
+  button:before {
+    font-size: 15px;
+  }
+}
+.slick-arrow > button {
+  background: #87c923;
+  z-index: 3;
+}
+.slick-slider .slick-prev {
+  left: 10px;
+  width: 4%;
+  height: 15%;
+  z-index: 3;
+}
+.slick-slider .slick-next {
+  right: 10px;
+  width: 4%;
+  height: 15%;
+}
+.slick-slider ul {
+  bottom: 20px;
+  z-index: 3;
+}
+.slick-slider .slick-dots li button:before {
+  font-size: 4px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 15px;
+  opacity: 50;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .slickImgDiv .slickImg {
+    height: 500px;
+  }
+}
+@media (max-width: 751px) {
+  .slickImgDiv .slickImg {
+    height: 400px;
+  }
+  .slickImg {
+    height: 370px;
+  }
+}
+@media (max-width: 551px) {
+  .slickImgDiv .slickImg {
+    height: 300px;
+  }
+  .slick-slider .slick-arrow {
+    display: none !important;
+  }
+}

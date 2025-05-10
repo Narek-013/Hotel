@@ -1,0 +1,94 @@
+.RoomImgModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.imgModalDiv {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background: rgb(182, 173, 129);
+  border-radius: 10px;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.modalImg-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.imgModal {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.zoom-in {
+  transform: scale(1);
+}
+
+.zoom-out {
+  transform: scale(0.8);
+}
+@media (max-width: 1200px) {
+  .imgModal {
+    height: 450px;
+  }
+  .imgModalDiv {
+    width: 65%;
+  }
+}
+@media (max-width: 1000px) {
+  .imgModal {
+    height: 350px;
+  }
+  .imgModalDiv {
+    width: 75%;
+  }
+}
+@media (max-width: 751px) {
+  .imgModal {
+    height: 400px;
+  }
+  .imgModalDiv {
+    width: 100%;
+  }
+}
+@media(max-width: 551px) {
+  .imgModal {
+    height: 400px;
+  }
+  .imgModalDiv {
+    width: 100%;
+  }
+}

@@ -1,0 +1,575 @@
+.HomePage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: "Monserrat";
+}
+.homePageDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.videoDiv {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}
+.inputsCont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #3e2b24;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.inputsDiv {
+  display: flex;
+  width: 70%;
+  height: auto;
+  padding: 50px 0;
+  background-color: rgb(229, 231, 204);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pickUpBtn {
+  display: flex;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  cursor: pointer;
+  background-color: #6b4c4b;
+  color: white;
+  border: 1px solid;
+  transition: 0.5s;
+}
+.pickUpBtn:hover {
+  background-color: #a79594;
+  transition: 0.5s;
+  color: #221a1a;
+}
+
+.welcomeSector {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.welcomeDiv {
+  display: flex;
+  width: 40%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 40px;
+  background-color: rgba(220, 221, 200, 0.684);
+  border-radius: 5px;
+  color: #6b4c4b;
+  gap: 70px;
+}
+.welcomeH {
+  display: flex;
+  font-size: 40px;
+}
+.reviewCompDiv {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcomeP {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+.startNowBtn {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #6b4c4b;
+  background-color: blanchedalmond;
+  color: #6b4c4b;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.startNowBtn:hover {
+  background-color: rgb(136, 108, 65);
+  color: #fcfafa;
+  transition: 0.5s;
+}
+
+.aboutOurHotelSector {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e6cf;
+}
+
+.aboutHotelDiv {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 50px;
+}
+.aboutHotel_cont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 50px;
+}
+.aboutHotelH {
+  font-size: 40px;
+  color: #513a39;
+}
+.aboutComfort_comp {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.aboutComfort {
+  display: flex;
+  width: 45%;
+  height: auto;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutComfortP {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #4a3216;
+}
+.aboutComfortImg {
+  display: flex;
+  width: 45%;
+  height: 520px;
+  background-size: cover;
+}
+.aboutComfortH {
+  color: #514e2b;
+  font-size: 30px;
+}
+.aboutHotelBtn {
+  display: flex;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e9e0df;
+  background-color: #6b4c4b;
+  border: 1px solid;
+  transition: 0.5s;
+}
+.aboutHotelBtn:hover {
+  background-color: #ddcecc;
+  color: #453131;
+  transition: 0.5s;
+}
+.reviewsSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e6cf;
+}
+.reviewsDiv {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.reviews_cont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviewsH {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  color: #513a39;
+  padding-bottom: 30px;
+}
+.revSpan {
+  font-size: 20px;
+  color: #453131;
+}
+.thanksSpeach {
+  display: flex;
+  width: 80%;
+  height: auto;
+  font-size: 30px;
+  color: #6f3e06;
+  font-weight: bold;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+hr {
+  border: 1px solid #a68585;
+}
+.inputPick-div {
+  display: flex;
+  width: 35%;
+  gap: 10px;
+  input {
+    display: flex;
+    width: 45%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid rgb(103, 79, 43);
+  }
+}
+.reviewComp {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+.revImg {
+  display: flex;
+  width: 150px;
+  height: 100px;
+  background-size: cover;
+}
+.revName {
+  display: flex;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  font-size: 30px;
+  color: #422625;
+}
+.revText {
+  display: flex;
+  width: 40%;
+  height: auto;
+  font-size: 20px;
+  color: #514e2b;
+}
+@media (max-width: 1460px) {
+  .aboutComfortImg {
+    height: 430px;
+  }
+  .aboutComfortH {
+    font-size: 25px;
+  }
+.aboutHotelDiv,.reviewsDiv {
+  width: 90vw;
+}
+  .thanksSpeach {
+    font-size: 25px;
+  }
+  .revName {
+    font-size: 25px;
+  }
+  .revText {
+    font-size: 18px;
+  }
+  .revImg {
+    width: 130px;
+    height: 90px;
+  }
+  .welcomeDiv {
+    width: 45%;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutComfortImg {
+    height: 390px;
+  }
+  .aboutComfortH {
+    font-size: 20px;
+  }
+  .aboutHotelBtn {
+    padding: 9px;
+    width: 28%;
+    font-size: 12px;
+  }
+  .aboutComfortP {
+    font-size: 16px;
+  }
+  .reviewsH {
+    font-size: 35px;
+  }
+  .aboutHotelH {
+    font-size: 35px;
+  }
+  .thanksSpeach {
+    font-size: 20px;
+  }
+  .revName {
+    font-size: 20px;
+  }
+  .revText {
+    font-size: 16px;
+  }
+  .revImg {
+    width: 120px;
+    height: 80px;
+  }
+  .welcomeDiv {
+    width: 50%;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .welcomeH {
+    font-size: 35px;
+  }
+  .welcomeP {
+    font-size: 18px;
+  }
+  .inputPick-div {
+    width: 38%;
+    input {
+      width: 48%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .aboutComfortImg {
+    height: 270px;
+  }
+  .aboutHotelH {
+    font-size: 30px;
+  }
+  .aboutHotelDiv,.reviewsDiv {
+    width: 85vw;
+  }
+  .aboutComfortH {
+    font-size: 16px;
+  }
+  .aboutComfortP {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .aboutHotelBtn {
+    width: 30%;
+    padding: 6px;
+    font-size: 10px;
+  }
+  .reviewsH {
+    font-size: 30px;
+  }
+  .thanksSpeach {
+    width: 100%;
+    font-size: 20px;
+  }
+  .revText {
+    font-size: 14px;
+  }
+  .reviewCompDiv {
+    width: 60%;
+  }
+  .revName {
+    font-size: 16px;
+  }
+  .revImg {
+    width: 110px;
+    height: 70px;
+  }
+  .welcomeDiv {
+    gap: 20px;
+    width: 50%;
+    padding: 20px 10px;
+  }
+  .welcomeH {
+    font-size: 25px;
+  }
+  .welcomeP {
+    font-size: 15px;
+  }
+  .startNowBtn {
+    font-size: 11px;
+    padding: 7px;
+  }
+  .inputsDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inputPick-div {
+    width: 70%;
+    justify-content: space-between;
+    input {
+      width: 45%;
+      height: 30px;
+      gap: 10px;
+    }
+  }
+  .pickUpBtn {
+    width: 20%;
+  }
+}
+@media (max-width: 751px) {
+  .welcomeDiv {
+    width: 55%;
+    padding: 30px 10px;
+    gap: 15px;
+  }
+  .welcomeH {
+    font-size: 20px;
+  }
+  .welcomeP {
+    font-size: 12px;
+  }
+  .startNowBtn {
+    width: 28%;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .aboutComfort_comp {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aboutComfort {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutComfortH {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutComfortP {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .aboutHotelBtn {
+    width: 30%;
+  }
+  .aboutComfortImg {
+    width: 100%;
+    height: 430px;
+  }
+  .reviewsH {
+    font-size: 25px;
+  }
+  .thanksSpeach {
+    width: 100%;
+    font-size: 14px;
+  }
+  .revText {
+    font-size: 9px;
+  }
+  .revName {
+    font-size: 12px;
+  }
+  .reviewComp {
+    gap: 30px;
+  }
+  .revImg {
+    width: 90px;
+    height: 60px;
+  }
+  .pickUpBtn {
+    width: 30%;
+  }
+}
+@media (max-width: 551px) {
+  .welcomeDiv {
+    width: 70%;
+    padding: 20px 10px;
+  }
+  .inputsDiv {
+    padding: 20px 0;
+  }
+  .welcomeH {
+    font-size: 17px;
+  }
+  .welcomeP {
+    width: 90%;
+  }
+  .startNowBtn {
+    width: 40%;
+    padding: 10px;
+  }
+  .aboutComfortImg {
+    height: 320px;
+  }
+  .thanksSpeach {
+    font-size: 13px;
+  }
+  .aboutHotelH {
+    font-size: 25px;
+  }
+  .reviewCompDiv {
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .revImg {
+    width: 70%;
+    height: 130px;
+  }
+  .reviewComp {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .revText {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .revName {
+    width: 80%;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .inputPick-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    input {
+     width: 75%;
+    }
+  }
+  .pickUpBtn {
+    width: 35%;
+  }
+}

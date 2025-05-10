@@ -1,0 +1,91 @@
+.HotelsPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 300px 0 100px;
+  background-color: #e1e6cf;
+  font-family: "Monserrat";
+}
+
+.hotelsPageDiv {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.allHotelsDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.allHotelsH {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+  color: #3e2b24;
+}
+
+.allHotels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 30px;
+}
+.noHotelFound {
+  font-size: 30px;
+  padding: 60px 20px;
+}
+@media (max-width: 1460px) {
+  .hotelsPageDiv {
+    width: 90vw;
+  }
+}
+@media (max-width: 1200px) {
+  .allHotels {
+    justify-content: space-around;
+    gap: 30px;
+  }
+  .allHotelsH {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .allHotelsH {
+    font-size: 40px;
+  }
+  .hotelsPageDiv {
+    width: 85vw;
+  }
+}
+@media (max-width: 751px) {
+  .allHotels {
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .allHotelsH {
+    font-size: 30px;
+  }
+  .HotelsPage {
+    padding: 150px 0 50px;
+  }
+}
+@media (max-width: 551px) {
+  .allHotels {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

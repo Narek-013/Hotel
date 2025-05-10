@@ -1,0 +1,271 @@
+.ReservationSuccess {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.reservationSuccessDiv {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 50px;
+}
+.reservSucTopDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.roomReadyDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.roomReady {
+  display: flex;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.roomReadySpan {
+  display: flex;
+  font-size: 20px;
+}
+.roomReadyHr {
+  border: 1px solid #e1e6cf;
+}
+.reservedInfoHr {
+  border: 1px solid #e1e6cf;
+}
+
+.reservedRoomInfosDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.reservationRoomInfoSuccess {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  gap: 30px;
+  font-size: 18px;
+  padding: 30px 20px;
+  background-color: #c4b693;
+  color: #3e2b24;
+}
+
+.roomReservInfos {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.backBtnDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #e1e6cf;
+  padding: 50px 20px 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.goBackP {
+  display: flex;
+  width: 60%;
+  font-size: 25px;
+  text-align: center;
+}
+.backBtn {
+  display: flex;
+  width: 30%;
+  height: auto;
+  border: 1px solid;
+  padding: 8px;
+  background-color: #c4b693;
+  color: #3e2b24;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.backBtn:hover {
+  transition: 0.5s;
+  background-color: #a59774;
+  cursor: pointer;
+}
+.CheckInOut {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.reservedInfoDiv {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  height: auto;
+}
+.reservedInfoName {
+  display: flex;
+  width: 40%;
+}
+.reservedInfoAboutName {
+  font-size: 25px;
+}
+.reservedInfoAbout {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  gap: 30px;
+}
+.reservedInfo {
+  text-decoration: none;
+  color: #f9f0f0;
+}
+@media (max-width: 1200px) {
+  .roomReservInfos {
+    width: 51%;
+  }
+  .reservationRoomInfoSuccess {
+    width: 43%;
+  }
+  .backBtnDiv {
+    padding: 30px 10px 20px;
+  }
+  .goBackP {
+    width: 70%;
+    font-size: 20px;
+  }
+  .reservedInfoName {
+    width: 43%;
+    font-size: 15px;
+  }
+  .reservedInfo {
+    font-size: 15px;
+  }
+  .reservedInfoAboutName {
+    font-size: 20px;
+  }
+}
+@media(max-width: 1000px) {
+  .roomReservInfos {
+    width: 45%;
+    gap: 20px;
+  }
+  .reservSucTopDiv {
+    font-size: 35px;
+  }
+  .reservationRoomInfoSuccess {
+    width: 52%;
+    padding: 20px 10px;
+  }
+  .backBtnDiv {
+    padding: 20px 10px 20px;
+    gap: 20px;
+  }
+  .goBackP {
+    width: 80%;
+    font-size: 18px;
+  }
+  .reservedInfoName {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .reservedInfoAbout {
+    gap: 15px;
+  }
+  .reservedInfoDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reservedInfo {
+    font-size: 14px;
+  }
+  .backBtn {
+    width: 50%;
+  }
+}
+@media(max-width: 751px) {
+  .roomReservInfos {
+    width: 45%;
+    gap: 10px;
+  }
+  .reservationRoomInfoSuccess {
+    width: 52%;
+    padding: 10px 5px;
+  }
+  .goBackP {
+    width: 90%;
+    font-size: 15px;
+  }
+  .reservedInfo {
+    font-size: 11px;
+  }
+  .reservedInfoName {
+    font-size: 13px;
+  }
+  .reservedInfoAboutName {
+    font-size: 18px;
+  }
+  .backBtn {
+    width: 60%;
+  }
+  .roomReadySpan {
+    font-size: 18px;
+  }
+}
+@media (max-width: 551px) {
+  .reservationSuccessDiv {
+    width: 100%;
+  }
+  .roomReservInfos {
+    width: 100%;
+    gap: 30px;
+  }
+  .reserved_info_name {
+    width: auto;
+  }
+  .reservedRoomInfosDiv {
+    flex-direction: column;
+  }
+  .reservSucTopDiv {
+    font-size: 25px;
+  }
+  .roomReady {
+    font-size: 18px;
+  }
+  .reservationRoomInfoSuccess {
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .reservedInfoAbout {
+    gap: 30px;
+  }
+  .reservedInfoDiv {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .reservedInfo {
+    font-size: 13px;
+   
+  }
+  .reservedInfoName {
+    font-size: 14px;
+  }
+  
+  .roomReadySpan {
+    font-size: 12px;
+  }
+}

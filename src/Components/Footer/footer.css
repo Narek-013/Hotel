@@ -1,0 +1,162 @@
+.Footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e2b24;
+  font-family: "Monserrat";
+}
+.footerDiv {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  padding: 50px 0;
+  flex-direction: column;
+  gap: 50px;
+}
+.footerTitleDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.footerTitle {
+  font-size: 40px;
+  color: #8e7b60;
+  font-family: "Quicksand";
+}
+.footerContactsDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #dccaca;
+  font-size: 20px;
+}
+.footerPhoneDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 32%;
+}
+.footerAddressDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 32%;
+}
+.footerIconsDiv {
+  display: flex;
+  gap: 30px;
+  width: 32%;
+}
+.iconLink {
+  display: flex;
+  color: azure;
+  font-size: 30px;
+}
+.footerPhoneDiv,
+.footerAddressDiv {
+  a {
+    text-decoration: none;
+    color: #dccaca;
+  }
+}
+.footerHr {
+  display: flex;
+  border: 1px solid #dccaca;
+  height: 100px;
+}
+@media (max-width: 1460px) {
+  .footerDiv {
+    width: 90vw;
+    gap: 30px;
+
+  }
+}
+@media (max-width: 1200px) {
+  .footerDiv {
+    gap: 20px;
+    padding: 30px 0;
+  }
+  .footerHr {
+    height: 90px;
+  }
+  .footerContactsDiv {
+    font-size: 18px;
+  }
+  .iconLink {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .footerDiv {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .footerHr {
+    height: 80px;
+  }
+  .footerContactsDiv {
+    font-size: 15px;
+  }
+  .footerTitle {
+    font-size: 30px;
+  }
+  .iconLink {
+    font-size: 20px;
+  }
+}
+@media (max-width: 751px) {
+  .footerHr {
+    height: 60px;
+  }
+  .footerContactsDiv {
+    font-size: 10px;
+    gap: 15px;
+  }
+  .footerTitle {
+    font-size: 20px;
+  }
+  .iconLink {
+    font-size: 12px;
+  }
+  .footerIconsDiv {
+    gap: 20px;
+  }
+}
+@media (max-width: 551px) {
+  .footerTitle {
+    font-size: 30px;
+  }
+  .footerTitleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerContactsDiv {
+    flex-direction: column;
+    font-size: 15px;
+    gap: 30px;
+  }
+  .footerPhoneDiv,
+  .footerAddressDiv,
+  .footerIconsDiv {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .iconLink {
+    font-size: 20px;
+  }
+  .footerDiv {
+    gap: 40px;
+    padding: 40px 0;
+  }
+  .footerHr {
+    width: 80%;
+    height: auto;
+  }
+}

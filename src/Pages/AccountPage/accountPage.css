@@ -1,0 +1,132 @@
+.AccountPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 170px 0 100px;
+  background-color: #e1e6cf;
+  font-family: "NotoSerif";
+  --primary-color: #4a90e2;
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --border-radius: 10px;
+  --item-bg: #e1e6cf;
+  --hover-bg: #f0f0f0;
+}
+.accountPageDiv {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+}
+.account-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.account-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--item-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  gap: 30px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+.user-profile > svg {
+  font-size: 50px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.account-settings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 17px;
+  background-color: #e0e3cf;
+}
+
+.settings-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border-radius: var(--border-radius);
+}
+.spanMenuAccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.settings-item:hover {
+  background: var(--hover-bg);
+}
+
+.settings-icon {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.arrow-icon {
+  color: gray;
+  font-size: 18px;
+}
+
+.logout {
+  color: red;
+  font-weight: bold;
+}
+@media (max-width: 1460px) {
+  .accountPageDiv {
+    width: 90vw;
+  }
+}
+@media (max-width: 1000px) {
+  .accountPageDiv {
+    width: 85vw;
+  }
+}
+@media (max-width: 551px) {
+  .AccountPage {
+    padding: 100px 0 80px;
+  }
+  .settings-item {
+    font-size: 15px;
+  }
+  .user-profile {
+    gap: 20px;
+    svg {
+      font-size: 40px;
+    }
+  }
+  .user-info h3 {
+    font-size: 16px;
+  }
+}

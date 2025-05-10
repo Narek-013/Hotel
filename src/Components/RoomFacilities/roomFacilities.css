@@ -1,0 +1,63 @@
+   .RoomFacility{
+   display: flex;
+   width: 45%;
+   gap: 20px;
+  }
+  
+  .RoomFacility svg {
+    font-size: 25px;
+    color: #e8dcc2;
+  }
+  @media(max-width: 1200px) {
+    .RoomFacility {
+      width: 48%;
+      svg {
+        font-size: 15px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  @media(max-width: 1000px) {
+    .RoomFacility {
+      svg {
+        font-size: 15px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  @media(max-width: 851px) {
+    .RoomFacility {
+      svg {
+        font-size: 20px;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+  @media(max-width: 751px) {
+    .RoomFacility {
+      width: 48%;
+      svg {
+        font-size: 15px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  @media(max-width: 551px) {
+    .RoomFacility {
+      width: 48%;
+      svg {
+        font-size: 17px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }

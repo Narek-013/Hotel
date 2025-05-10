@@ -1,0 +1,86 @@
+.Search {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-items: center;
+}
+.Search svg {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  font-size: 20px;
+  left: 27%;
+  color: #3e2b24;
+}
+.searchInp {
+  width: 30%;
+  height: 50px;
+  border: 2px solid #debb8e;
+  background-color: #3e2b24;
+  color: #ffefde;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px #0000001a;
+}
+
+.searchInp::placeholder {
+  color: #e2cfb5;
+}
+
+.searchInp:hover {
+  border-color: #c89f75;
+}
+.searchInp:focus svg {
+  color: #3e2b24;
+}
+.searchInp:focus {
+  background-color: #ffefde;
+  color: #3e2b24;
+  border-color: #3e2b24;
+  box-shadow: 0px 4px 12px #00000033;
+}
+@media (max-width: 1200px) {
+  .searchInp {
+    width: 40%;
+  }
+  .Search svg {
+    left: 36.5%;
+  }
+}
+@media(max-width: 1000px) {
+  .searchInp {
+    width: 45%;
+    height: 45px;
+  }
+  .Search svg {
+    left: 41%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 751px) {
+  .searchInp {
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .Search svg {
+    left: 43.8%;
+    font-size: 18px;
+  }
+}
+@media(max-width: 551px) {
+  .searchInp {
+    width: 90%;
+  }
+  .Search {
+    justify-content: center;
+  }
+  .Search svg {
+    left: 86%;
+    font-size: 18px;
+   
+  }
+}

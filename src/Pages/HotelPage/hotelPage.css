@@ -1,0 +1,214 @@
+.HotelPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #e1e6cf; */
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 43, 36, 0.3) 0%,
+    #e1e6cf 20%,
+    #e1e6cf 70%,
+    rgba(62, 43, 36, 0.3) 100%
+  );
+  padding: 150px 0 100px;
+}
+.hotelPageDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hotelPageBox {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelTopDiv {
+  display: flex;
+  width: 100vw;
+  padding: 80px 0;
+  gap: 30px;
+  color: #3e2b24;
+}
+.hotelInfo_weather {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 70px 0;
+  justify-content: space-between;
+}
+.hotelInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  gap: 20px;
+  justify-content: end;
+}
+.hotelInfoNameDiv {
+  display: flex;
+  gap: 10px;
+}
+.hotelInfoNameSpan {
+  display: flex;
+  width: 13%;
+}
+.hotelInfoSpan {
+  display: flex;
+  padding-left: 10px;
+}
+.hotelWeather {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  height: auto;
+  align-items: flex-end;
+}
+.seeWeather {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e2b24;
+  font-size: 20px;
+  color: #e1e6cf;
+  border: none;
+  padding: 10px;
+  transition: 0.5s;
+}
+.seeWeather:hover {
+  background-color: #6d7061;
+  color: #e1e6cf;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hotelRooms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 30px;
+}
+.currentWeather {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.currentWeather > h2 {
+  width: 100%;
+  font-size: 50px;
+  color: #513c35;
+}
+.currentWeather > img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 1460px) {
+  .hotelTopDiv,
+  .hotelPageBox {
+    width: 90vw;
+  }
+}
+@media (max-width: 1000px) {
+  .hotelRooms {
+    justify-content: space-around;
+  }
+  .hotelTopDiv,
+  .hotelPageBox {
+    width: 85vw;
+  }
+  .hotelWeather {
+    width: 40%;
+  }
+  .currentWeather > img {
+    width: 110px;
+    height: 110px;
+  }
+  .currentWeather > h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+@media (max-width: 751px) {
+  .hotelRooms {
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .currentWeather > img {
+    width: 90px;
+    height: 90px;
+  }
+  .currentWeather > h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .seeWeather {
+    font-size: 18px;
+  }
+  .hotelInfoNameDiv {
+    gap: 25px;
+  }
+  .hotelNameH {
+    font-size: 25px;
+  }
+  .hotelTopDiv > svg {
+    font-size: 25px;
+  }
+  .HotelPage {
+    padding: 100px 0 80px;
+  }
+}
+@media (max-width: 551px) {
+  .hotelNameH {
+    font-size: 20px;
+  }
+  .hotelTopDiv {
+    padding: 50px 0;
+  }
+  .hotelTopDiv > svg {
+    font-size: 20px;
+  }
+  .hotelInfo_weather {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+  }
+  .hotelInfo {
+    font-size: 18px;
+  }
+  .currentWeather {
+    img {
+      width: 160px;
+      height: 160px;
+    }
+    h2 {
+      width: 50%;
+      font-size: 50px;
+    }
+  }
+  .seeWeather {
+    padding: 15px;
+  }
+  .hotelRooms {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

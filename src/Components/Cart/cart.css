@@ -1,0 +1,120 @@
+.Cart,
+.CartHistory {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  padding-right: 10px;
+}
+.cartDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.cartItemsDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  padding-right: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.cartItemsDiv::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cartItemsDiv::-webkit-scrollbar-thumb {
+  background: #3e2b24;
+  border-radius: 10px;
+}
+.cartItemsDiv::-webkit-scrollbar-track {
+  background: #ebece6;
+  border-radius: 10px;
+}
+.clearCartBtnDiv {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.clearCartBtn, .clearHistoryBtn {
+  display: flex;
+  width: 19%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #3e2b24;
+  font-size: 1vw;
+  background-color: #d6c4bd;
+  border: 2px solid #3e2b24;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.clearCartBtn:hover {
+  background-color: #3e2b24;
+  color: #ffefde;
+  cursor: pointer;
+}
+.clearHistoryBtn:hover {
+  background-color: #3e2b24;
+  color: #ffefde;
+  cursor: pointer;
+}
+.noCartP {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+@media (max-width: 1001px) {
+  .clearCartBtnDiv {
+    padding: 10px 0;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .cartItemsDiv {
+    gap: 35px;
+  }
+  .clearCartBtn, .clearHistoryBtn {
+    padding: 5px;
+    font-size: 1.3vw;
+  }
+}
+@media (max-width: 751px) {
+  .cartItemsDiv {
+    gap: 25px;
+    max-height: 40vh;
+  }
+  .clearCartBtnDiv {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .noCartP {
+    padding: 50px 0;
+    font-size: 25px;
+  }
+  .clearCartBtn, .clearHistoryBtn {
+    padding: 3px;
+    font-size: 1.4vw;
+  }
+}
+@media (max-width: 551px) {
+  .clearCartBtnDiv {
+    h1 {
+      font-size: 16px;
+    }
+    
+  }
+  .clearCartBtn, .clearHistoryBtn {
+    padding: 3px;
+    font-size: 1.5vw;
+  }
+}

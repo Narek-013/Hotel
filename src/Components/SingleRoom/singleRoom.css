@@ -1,0 +1,100 @@
+.SingleRoom {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  height: 320px;
+  gap: 20px;
+  background-color: #3e2b24;
+  color: #ebe0c4;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.SingleRoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px #00000080;
+}
+
+.roomImg {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  border: none;
+  transition: filter 0.3s ease;
+}
+
+.hotelRoom:hover .roomImg {
+  filter: brightness(0.8);
+}
+
+.room_info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: color 0.3s ease;
+}
+
+.info_link {
+  display: flex;
+  width: 90%;
+  height: auto;
+  color: #ebe0c4;
+  transition: color 0.3s ease;
+}
+
+.more_span:hover {
+  color: #ffcc80;
+}
+
+.room_name {
+  display: flex;
+  width: 90%;
+  height: auto;
+  font-size: 25px;
+}
+@media (max-width: 1200px) {
+  .SingleRoom {
+    height: 300px;
+  }
+  .roomImg {
+    height: 200px;
+  }
+}
+@media(max-width: 1000px) {
+  .SingleRoom {
+    width: 47%;
+  }
+}
+@media(max-width: 751px) {
+  .SingleRoom {
+    height: 240px;
+    width: 48%;
+    gap: 15px;
+  }
+  .roomImg {
+    height: 160px;
+  }
+  .room_name {
+    font-size: 20px;
+  }
+  .room_info {
+    gap: 10px;
+  }
+  .more_span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 551px) {
+  
+.SingleRoom {
+  width: 100%;
+  height: 300px;
+}
+.roomImg {
+  height: 220px;
+}
+}

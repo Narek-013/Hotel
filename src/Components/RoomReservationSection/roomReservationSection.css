@@ -1,0 +1,165 @@
+.RoomReservationSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+.roomPriceCont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+.inputNameReservation {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.roomPriceDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.roomPrice {
+  font-size: 35px;
+}
+.roomPriceHr {
+  border: 1px solid #e1e6cf;
+}
+.reservDatesForm {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+.reservationInput {
+  display: flex;
+  padding: 15px;
+  border: 2px solid #e1e6cf;
+  background-color: #645941;
+  color: white;
+}
+.reservationInput::placeholder {
+  color: #e1e6cf;
+}
+.reservationInput:focus {
+  border-color: #b7a887;
+  outline: none;
+}
+.totalPriceCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 15px;
+  border: 2px solid #e1e6cf;
+  padding: 10px;
+}
+.totalPriceCont > div {
+  display: flex;
+  justify-content: space-between;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reservationBtn {
+  display: flex;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7a887;
+  color: #393327;
+  transition: 0.5s;
+}
+.reservationBtn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #e1d4b9;
+}
+.formReservation {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 15px;
+}
+.reservationInputDiv {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
+.errorsReservation {
+  color: #d9ed7b;
+  font-size: 12px;
+}
+@media (max-width: 1200px) {
+  .reservationInput {
+    padding: 12px;
+  }
+  .inputNameReservation {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .errorsReservation {
+    margin: 0;
+  }
+  .totalPriceCont {
+    font-size: 15px;
+    gap: 10px;
+  }
+  .roomPrice {
+    font-size: 30px;
+  }
+  .RoomReservationSection {
+    gap: 15px;
+  }
+  .forNightSpan {
+    font-size: 15px;
+  }
+  .formReservation {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 751px) {
+  .inputNameReservation {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .totalPriceCont {
+    font-size: 20px;
+    gap: 10px;
+  }
+
+  .RoomReservationSection {
+    gap: 15px;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .formReservation {
+    gap: 30px;
+  }
+}
+@media (max-width: 551px) {
+  .RoomReservationSection {
+    gap: 15px;
+    padding: 15px;
+    gap: 30px;
+  }
+
+  .formReservation {
+    gap: 15px;
+  }
+}

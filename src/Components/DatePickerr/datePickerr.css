@@ -1,0 +1,87 @@
+.DatePicker {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.DatePickerEdit {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.editCheckIn,
+.editCheckOut {
+  width: 48%;
+}
+.editInputName {
+  display: flex;
+  flex-direction: column;
+  min-height: 3.1vw;
+}
+.css-1b1fjlj-MuiFormControl-root-MuiTextField-root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.MuiFormControl-root > div {
+  border-radius: 0;
+}
+.css-1umw9bq-MuiSvgIcon-root {
+  color: #e1e6cf;
+}
+.css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #e1e6cf;
+}
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  color: #e1e6cf;
+  border: 2px solid #e1e6cf;
+}
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root:focus {
+  color: #e1e6cf;
+  border: 2px solid #e1e6cf;
+  outline: none;
+}
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root > input {
+  color: #e1e6cf;
+  height: auto;
+  padding: 12px;
+}
+@media (max-width: 1200px) {
+  .MuiFormControl-root > div {
+    height: 45px;
+  }
+  .css-jupps9-MuiInputBase-root-MuiOutlinedInput-root > input {
+    font-size: 15px;
+  }
+  .css-1ysp02-MuiButtonBase-root-MuiIconButton-root > svg {
+    font-size: 20px;
+  }
+  .css-18jb465-MuiPickersLayout-contentWrapper
+    > .css-5wchs2-MuiDateCalendar-root {
+    width: 32vw;
+    max-height: 300px;
+  }
+  .DatePicker {
+    gap: 15px;
+  }
+}
+@media (max-width: 551px) {
+  .css-18jb465-MuiPickersLayout-contentWrapper
+    > .css-5wchs2-MuiDateCalendar-root {
+    width: 70vw;
+    max-height: 300px;
+  }
+  .DatePickerEdit {
+    display: flex;
+    flex-direction: column;
+  }
+  .editCheckIn,.editCheckOut {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+  }
+}
